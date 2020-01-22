@@ -175,8 +175,11 @@ var init = function(options, customExtensions) {
   return true;
 };
 
+var templateSystem = require('./bindings/choose-template.js');
+
 module.exports = {
   isCompatible: templateLoader.isCompatible,
   init: init,
-  start: start
+  start: start,
+  templateSystem: templateSystem,
 };
